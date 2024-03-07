@@ -323,8 +323,8 @@ Meningkatkan keterbacaan dan maintainability kode: Menggunakan tipe data yang te
 Secara keseluruhan, tipe data adalah konsep dasar namun fundamental dalam pemrograman. Memahami dan menggunakan tipe data dengan benar sangat penting untuk menulis kode yang andal, efisien, dan mudah dipahami.
 
 ## Daftar Pustaka
-[1]. Perbedaan dari Array dan Map. diakses dari  https://www.geeksforgeeks.org/difference-between-array-and-map/
-[2]. Karumanchi, N. (2016). Data Structures and algorithms made easy: Concepts, problems, Interview Questions. CareerMonk Publications.
-[3]. TylerMSFT. (n.d.). Collections (C++/CX). diakses dari https://learn.microsoft.com/en-us/cpp/cppcx/collections-c-cx?view=msvc-170
-[4]. Primitive Data type in C++. diakses dari https://geekonpeak.com/programming/cpp/primitive-data-types-cpp/
-[5]. Struct dan Class - Ramadhani Akbar. diakses dari https://boltremjaya.wordpress.com/2013/09/16/struct-dan-class/
+1. Perbedaan dari Array dan Map. diakses dari  https://www.geeksforgeeks.org/difference-between-array-and-map/
+2. Karumanchi, N. (2016). Data Structures and algorithms made easy: Concepts, problems, Interview Questions. CareerMonk Publications.
+3. TylerMSFT. (n.d.). Collections (C++/CX). diakses dari https://learn.microsoft.com/en-us/cpp/cppcx/collections-c-cx?view=msvc-170
+4. Primitive Data type in C++. diakses dari https://geekonpeak.com/programming/cpp/primitive-data-types-cpp/
+5. Struct dan Class - Ramadhani Akbar. diakses dari https://boltremjaya.wordpress.com/2013/09/16/struct-dan-class/
