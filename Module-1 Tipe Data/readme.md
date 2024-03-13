@@ -137,6 +137,7 @@ int main()
 }
 ```
 ### Output:
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/00ba6ace-b837-4bb0-9eb0-d4ff77ce91b7)
 
 ### Penjelasan:
 Program C++ ini mendeklarasikan dan menginisialisasi array bilangan bulat bernama nilai dengan lima elemen. Itu kemudian memberikan nilai tertentu ke setiap elemen array. Terakhir, ia melakukan iterasi melalui array dan mencetak nilai setiap elemen menggunakan objek cout.
