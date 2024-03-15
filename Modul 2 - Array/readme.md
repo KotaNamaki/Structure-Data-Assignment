@@ -247,4 +247,94 @@ Penjelasan kode:
 - Kemudian, kita membuat array tiga dimensi menggunakan std::vector dengan ukuran yang ditentukan oleh pengguna.
 - Setelah itu, kita meminta pengguna untuk memasukkan elemen-elemen array.
 - Terakhir, kita menampilkan elemen-elemen array yang telah dimasukkan.
-Untuk membuat program C++ yang memungkinkan pengguna memasukkan elemen array tiga dimensi dengan ukuran yang ditentukan oleh pengguna, Anda perlu menggunakan array dinamis atau vector karena ukuran array statis tidak dapat diubah setelah deklarasi. Namun, karena pertanyaan Anda menyebutkan array tiga dimensi, kita akan menggunakan vector untuk mencapai ini karena vector memungkinkan ukuran yang fleksibel.
+
+### 3. Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata – rata dari suatu array dengan input yang dimasukan oleh user!
+```C++
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <numeric>
+
+using namespace std;
+
+// Fungsi untuk menampilkan menu
+void menu()
+{
+    cout << "\n\t\tMENU :" << endl;
+    cout << "\nPress 1 untuk mencari nilai maksimum di array" << endl;
+    cout << "Press 2 untuk mencari nilai minimum di array" << endl;
+    cout << "Press 3 untuk mencari rata rata di array" << endl;
+    cout << "Press 4 to exit" << endl;
+}
+
+// Fungsi untuk mencari elemen maksimum dalam array
+int findMax(vector<int> &arr)
+{
+    return *max_element(arr.begin(), arr.end());
+}
+
+// Fungsi untuk mencari elemen minimum dalam array
+int findMin(vector<int> &arr)
+{
+    return *min_element(arr.begin(), arr.end());
+}
+
+// Fungsi untuk menghitung rata-rata elemen dalam array
+double calculateAverage(vector<int> &arr)
+{
+    return accumulate(arr.begin(), arr.end(), 0.0) / arr.size();
+}
+
+int main()
+{
+    int choice;
+    vector<int> arr;
+    int n, element;
+
+    cout << "Masukan Berapa Elemen yang ingin dimasukkan di array: ";
+    cin >> n;
+
+    cout << "Masukan elemen: ";
+    for (int i = 0; i < n; i++)
+    {
+        cin >> element;
+        arr.push_back(element);
+    }
+
+    do
+    {
+        menu();
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice)
+        {
+        case 1:
+            cout << "Maximum element di array: " << findMax(arr) << endl;
+            break;
+        case 2:
+            cout << "Minimum element di array: " << findMin(arr) << endl;
+            break;
+        case 3:
+            cout << "Rata-rata of elements di array: " << calculateAverage(arr) << endl;
+            break;
+        case 4:
+            cout << "Exiting the program." << endl;
+            break;
+        default:
+            cout << "Invalid option. Please try again." << endl;
+        }
+    } while (choice != 4);
+
+    return 0;
+}
+```
+### Output
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/bd69edab-7f03-4b7a-b29d-ecdf66200088)
+
+### Penjelasan
+- Pertama, kita meminta pengguna untuk memasukkan jumlah elemen dalam array dan elemen-elemennya.
+- Kemudian, kita menampilkan menu yang memungkinkan pengguna untuk memilih operasi yang ingin dilakukan.
+- Berdasarkan pilihan pengguna, kita menjalankan fungsi yang sesuai untuk mencari elemen maksimum, minimum, atau menghitung rata-rata elemen dalam array.
+- Program ini menggunakan vector<int> untuk menyimpan elemen-elemen array, yang memungkinkan ukuran array yang dinamis.
+- Fungsi findMax, findMin, dan calculateAverage menggunakan algoritma standar dari C++ untuk mencari elemen maksimum, minimum, dan menghitung rata-rata elemen dalam array.
