@@ -132,3 +132,9 @@ int main()
 ```
 ### Output: 
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/5a578427-e3d4-4db9-b8d3-b073cf34db55)
+
+### Penjelasan: 
+Kode C++ ini pertama-tama meminta pengguna untuk memasukkan panjang array dan kemudian meminta pengguna untuk memasukkan nilai ke dalam array. Kemudian, kode ini menemukan nilai maksimum dalam array dan mencetak nilai maksimum dan lokasinya.
+
+## Unguided
+
