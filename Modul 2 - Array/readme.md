@@ -338,3 +338,25 @@ int main()
 - Berdasarkan pilihan pengguna, kita menjalankan fungsi yang sesuai untuk mencari elemen maksimum, minimum, atau menghitung rata-rata elemen dalam array.
 - Program ini menggunakan vector<int> untuk menyimpan elemen-elemen array, yang memungkinkan ukuran array yang dinamis.
 - Fungsi findMax, findMin, dan calculateAverage menggunakan algoritma standar dari C++ untuk mencari elemen maksimum, minimum, dan menghitung rata-rata elemen dalam array.
+
+## Kesimpulan
+Array di C++ adalah struktur data yang digunakan untuk menyimpan beberapa nilai dalam satu variabel, alih-alih mendeklarasikan variabel terpisah untuk setiap nilai. Array memungkinkan kita untuk menyimpan elemen-elemen yang memiliki tipe data yang sama dalam lokasi memori yang berdekatan. Ini membuat array menjadi alat yang sangat berguna dalam berbagai aplikasi pemrograman, seperti penyimpanan data yang terkait atau operasi pada kumpulan data.
+
+Kesimpulan dari array di C++ mencakup beberapa poin penting:
+
+Penggunaan Efisien Memori: Array menyimpan elemen-elemennya dalam lokasi memori yang berdekatan, yang memungkinkan akses yang cepat dan efisien ke elemen-elemen tersebut.
+Pendeklarasian dan Inisialisasi: Array dideklarasikan dengan menentukan tipe variabel, nama array, dan jumlah elemen yang akan disimpan. Elemen-elemen array dapat diinisialisasi saat deklarasi atau setelahnya.
+Akses Elemen: Elemen dalam array diakses melalui indeks, dimulai dari 0 hingga ukuran array dikurangi satu. Ini memudahkan operasi seperti pengambilan, penyimpanan, dan modifikasi elemen .
+Operasi pada Array: C++ menyediakan berbagai fungsi dan algoritma untuk melakukan operasi pada array, seperti mencari elemen maksimum, minimum, atau menghitung jumlah elemen dalam array. Ini memungkinkan penggunaan array dalam berbagai algoritma dan struktur data.
+Fleksibilitas: Meskipun array memiliki ukuran yang tetap setelah deklarasi, C++ menyediakan `vector` sebagai alternatif yang memungkinkan ukuran yang dinamis, memberikan fleksibilitas lebih dalam penggunaan array.
+
+Dengan demikian, array di C++ adalah struktur data yang sangat berguna dan fleksibel, yang memungkinkan penggunaan efisien memori dan mudah dalam operasi pada kumpulan data.
+
+## Daftar Pustaka
+1. C++ Arrays. diakses dari https://www.w3schools.com/cpp/cpp_arrays.asp#:~:text=Arrays%20are%20used%20to%20store,separate%20variables%20for%20each%20value.
+2. Array Sum. diakses dari https://www.tutorialspoint.com/array-sum-in-cplusplus-stlhttps://stackoverflow.com/questions/26941943/how-to-add-all-numbers-in-an-array-in-c
+3. Menu Driven Program in C++. diakses dari https://www.geeksforgeeks.org/menu-driven-program-in-cpp-to-perform-various-basic-operations-on-array/
+4. C++ Program to calculate Average. diakses dari https://www.programiz.com/cpp-programming/examples/average-arrays
+5. Average, Maksimum, minimum. diakses dari https://stackoverflow.com/questions/31363545/average-maximum-and-minimum-assignment-for-c
+6. C++ Multidimensional Arrays (2nd and 3rd Arrays). diakses dari https://www.programiz.com/cpp-programming/multidimensional-arrays
+7. 3D Matrix of User Defined. diakses dari https://www.codeproject.com/Questions/5348258/3D-matrix-of-user-defined-type-in-Cplusplus-and-th
