@@ -137,4 +137,114 @@ int main()
 Kode C++ ini pertama-tama meminta pengguna untuk memasukkan panjang array dan kemudian meminta pengguna untuk memasukkan nilai ke dalam array. Kemudian, kode ini menemukan nilai maksimum dalam array dan mencetak nilai maksimum dan lokasinya.
 
 ## Unguided
+### 1. Buatlah program untuk menampilkan Output seperti berikut dengan data yang diinputkan oleh user!
+```C++
+#include <iostream>
+using namespace std;
 
+int main() {
+  // Mendeklarasikan variabel `n` untuk menyimpan jumlah data
+  int n;
+
+  // Meminta pengguna untuk memasukkan jumlah data
+  cout << "Masukkan jumlah data: ";
+  cin >> n;
+
+  // Mendeklarasikan array `data` dengan panjang `n`
+  int data[n];
+
+  // Meminta pengguna untuk memasukkan data
+  cout << "Masukkan data:\n";
+  for (int i = 0; i < n; i++) {
+    // Perulangan untuk memasukkan data ke dalam array
+    cin >> data[i];
+  }
+
+  // Menampilkan data array
+  cout << "Data Array: ";
+  for (int i = 0; i < n; i++) {
+    // Perulangan untuk menampilkan data array
+    cout << data[i] << " ";
+  }
+
+  // Menampilkan nomor genap
+  cout << "\nNomor Genap: ";
+  for (int i = 0; i < n; i++) {
+    // Perulangan untuk menampilkan data genap
+    if (data[i] % 2 == 0) {
+      // Memeriksa apakah data genap
+      cout << data[i] << " ";
+    }
+  }
+
+  // Menampilkan nomor ganjil
+  cout << "\nNomor Ganjil: ";
+  for (int i = 0; i < n; i++) {
+    // Perulangan untuk menampilkan data ganjil
+    if (data[i] % 2 == 1) {
+      // Memeriksa apakah data ganjil
+      cout << data[i] << " ";
+    }
+  }
+
+  cout << endl;
+  return 0;
+}
+
+```
+### Output
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/d0739e27-e7f9-4946-b24c-598d5f0445a9)
+
+### Penjelasan 
+Kode ini adalah program C++ yang meminta pengguna untuk memasukkan jumlah data (bilangan bulat) dan kemudian meminta pengguna untuk memasukkan data tersebut. Data tersebut disimpan dalam array dengan panjang sesuai dengan jumlah data yang dimasukkan. Program kemudian menampilkan semua data yang dimasukkan, kemudian menampilkan data yang genap, dan terakhir menampilkan data yang ganjil. Program ini menggunakan perulangan for untuk memasukkan dan menampilkan data, serta menggunakan operator modulus % untuk memeriksa apakah suatu angka adalah genap atau ganjil.
+
+### 2. Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!
+```C++
+#include <iostream>
+#include <vector>
+using namespace std;
+int main() {
+    int dim1, dim2, dim3;
+    cout << "Masukkan ukuran dimensi 1: ";
+    cin >> dim1;
+    cout << "Masukkan ukuran dimensi 2: ";
+    cin >> dim2;
+    cout << "Masukkan ukuran dimensi 3: ";
+    cin >> dim3;
+
+    // Membuat array tiga dimensi dengan ukuran yang ditentukan oleh pengguna
+    vector<vector<vector<int>>> array3D(dim1, vector<vector<int>>(dim2, vector<int>(dim3)));
+
+    // Mengisi array dengan input pengguna
+    cout << "Masukkan elemen array (dim1 x dim2 x dim3):\n";
+    for (int i = 0; i < dim1; ++i) {
+        for (int j = 0; j < dim2; ++j) {
+            for (int k = 0; k < dim3; ++k) {
+                cin >> array3D[i][j][k];
+            }
+        }
+    }
+
+    // Menampilkan elemen array
+    cout << "Elemen array:\n";
+    for (int i = 0; i < dim1; ++i) {
+        for (int j = 0; j < dim2; ++j) {
+            for (int k = 0; k < dim3; ++k) {
+                cout << "array3D[" << i << "][" << j << "][" << k << "] = " << array3D[i][j][k] << endl;
+            }
+        }
+    }
+
+    return 0;
+}
+```
+### Output
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/ee7d09d9-f02b-4017-9520-c184f10cf682)
+
+### Penjelasan
+Penjelasan kode:
+- Pertama, kita meminta pengguna untuk memasukkan ukuran dari tiga dimensi array.
+- Kemudian, kita membuat array tiga dimensi menggunakan std::vector dengan ukuran yang ditentukan oleh pengguna.
+- Setelah itu, kita meminta pengguna untuk memasukkan elemen-elemen array.
+- Terakhir, kita menampilkan elemen-elemen array yang telah dimasukkan.
+Untuk membuat program C++ yang memungkinkan pengguna memasukkan elemen array tiga dimensi dengan ukuran yang ditentukan oleh pengguna, Anda perlu menggunakan array dinamis atau vector karena ukuran array statis tidak dapat diubah setelah deklarasi. Namun, karena pertanyaan Anda menyebutkan array tiga dimensi, kita akan menggunakan vector untuk mencapai ini karena vector memungkinkan ukuran yang fleksibel.
