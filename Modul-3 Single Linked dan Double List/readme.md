@@ -1094,6 +1094,9 @@ int main() {
 
 ## Daftar Pustaka
 [1]. Sundell, Hakan dan Tsigas, Phillapas, "Lock-free deques and doubly linked lists",  Journal of Parallel and Distributed Computing, Elsevier, July 2008.
+
 [2]. Dutta, A., Choudhury, M.R. & Kundu, K. Extrapolating linked list data structures to 3rd dimension. Iran J Comput Sci 6, 195–206 (2023).
+
 [3]. Wijayaningrum, V.N., Putriwijaya, N.N.: An improved crow search algorithm for data clustering. EMITTER Int. J. Eng. Technol. 8(1) (2020).
+
 [4]. Das, P., Naskar, S.K., Narayan, P.S.: Fast converging cuckoo search algorithm to de-sign symmetric FIR filters. Int. J. Comput. Appl. 43(6) (2021)
