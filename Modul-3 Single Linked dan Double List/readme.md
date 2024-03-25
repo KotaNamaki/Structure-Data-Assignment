@@ -1065,20 +1065,20 @@ int main() {
 ```
 
 ### Screenshot
-####Gambar Full List 
+#### Gambar Full List 
 
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/302be3b3-392b-4d42-99ea-a9becaa39b16)
 
-####Case 1. 
+#### Case 1. 
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/fad22165-3678-4289-aefe-7b276155d68e)
 
-####Case 2.
+#### Case 2.
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/9513c3ed-8d0c-4b0e-818e-b3168447a93c)
 
-####Case 3.
+#### Case 3.
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/3156bd1f-2057-43f3-b6ff-9a4a6d9b1949)
 
-####Case 4.
+#### Case 4.
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/5092792a-016a-4d42-84f3-db6055287d1a)
 
 
