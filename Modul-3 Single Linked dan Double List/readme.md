@@ -1081,6 +1081,11 @@ int main() {
 #### Case 4.
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/5092792a-016a-4d42-84f3-db6055287d1a)
 
+## Kesimpulan
+<div style = "text-align: justify">Single dan double linked list adalah dua jenis struktur data yang berbeda dalam hal cara mereka menghubungkan elemen-elemennya. Single linked list, seperti namanya, hanya memiliki referensi ke elemen berikutnya dalam list, sedangkan double linked list memiliki referensi ke elemen sebelumnya dan berikutnya. Ini membuat double linked list memiliki keuntungan dalam beberapa operasi, seperti penghapusan dan penambahan elemen di awal atau akhir list, karena mereka dapat dengan mudah mengakses elemen sebelumnya tanpa perlu melalui elemen-elemen lainnya.
 
+Namun, perlu diingat bahwa meskipun double linked list memiliki keuntungan dalam hal akses ke elemen sebelumnya, ini tidak secara signifikan mempengaruhi kompleksitas waktu operasi dalam notasi Big O. Dalam kasus seperti penghapusan, baik single maupun double linked list memiliki kompleksitas waktu O(n), karena dalam kedua kasus, operasi tersebut memerlukan penelusuran melalui list untuk menemukan elemen yang akan dihapus.
 
+Selain itu, double linked list memiliki overhead tambahan karena setiap elemen memiliki dua referensi (satu ke elemen sebelumnya dan satu ke elemen berikutnya), yang berarti mereka menggunakan lebih banyak memori dibandingkan single linked list. Ini bisa menjadi pertimbangan dalam konteks di mana memori sangat penting.
 
+Secara keseluruhan, pilihan antara single dan double linked list tergantung pada kebutuhan spesifik aplikasi. Double linked list mungkin lebih cocok untuk aplikasi yang memerlukan operasi yang sering mengakses elemen sebelumnya, sementara single linked list mungkin lebih cocok untuk aplikasi yang hanya perlu akses ke elemen berikutnya, seperti dalam implementasi stack atau queue.</div>
