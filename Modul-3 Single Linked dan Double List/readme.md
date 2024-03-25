@@ -1,4 +1,4 @@
-# <h1 align="center"> Laporan Praktium Modul-2 Array </h1>
+# <h1 align="center"> Laporan Praktium Modul-3 Single dan Double Linked List </h1>
 <p align="center"> Andhika Haqqa Syahrony <p>
 <p align="center"> 2311102197@ittelkom-pwt.ac.id</p>
 
