@@ -773,10 +773,19 @@ int main()
 }
 ```
 ### Screenshot
+#### Output.
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/6214a12e-f7e2-43e1-a14a-a51980cce44d)
+
+#### Case 1.
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/0d73ed8c-bf39-4843-bbc2-7f1dbb0ca3b3)
+
+#### Case 2.
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/8e56773c-7db1-4305-98c3-d393a26af0bc)
+
+#### Case 3.
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/f0d5a15b-b054-4ed0-9829-f5ef057b54a5)
+
+#### Case 4.
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/73e6902f-b278-4384-ac33-e97ab2d65b93)
 
 ### 2. Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga.
