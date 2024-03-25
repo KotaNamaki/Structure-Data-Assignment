@@ -803,18 +803,11 @@ Somethinc dan Skintific
 2. Hapus produk wardah
 3. Update produk Hanasui menjadi Cleora dengan harga 55.000
 4. Tampilkan menu seperti dibawah ini
-Toko Skincare Purwokerto
-1. Tambah Data
-2. Hapus Data
-3. Update Data
-4. Tambah Data Urutan Tertentu
-5. Hapus Data Urutan Tertentu
-6. Hapus Seluruh Data
-7. Tampilkan Data
-8. Exit
-Pada menu 7, tampilan akhirnya akan menjadi seperti dibawah
-ini :
 
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/85c328ab-1684-4af0-b845-1af8055110a5)
+
+Pada menu 7, tampilan akhirnya akan menjadi seperti dibawah ini :
+   
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/89a0d862-b2ab-40fd-8829-08d1804202cd)
 
 ```C++
