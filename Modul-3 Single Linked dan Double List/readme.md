@@ -790,6 +790,33 @@ int main()
 
 ### 2. Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga.
 
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/cc406b16-a1d7-40c0-8b62-9f2b11f80527)
+
+
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/aa911434-af99-4ab0-b7b5-592ea759fb34)
+
+
+
+Case:
+1. Tambahkan produk Azarine dengan harga 65000 diantara
+Somethinc dan Skintific
+2. Hapus produk wardah
+3. Update produk Hanasui menjadi Cleora dengan harga 55.000
+4. Tampilkan menu seperti dibawah ini
+Toko Skincare Purwokerto
+1. Tambah Data
+2. Hapus Data
+3. Update Data
+4. Tambah Data Urutan Tertentu
+5. Hapus Data Urutan Tertentu
+6. Hapus Seluruh Data
+7. Tampilkan Data
+8. Exit
+Pada menu 7, tampilan akhirnya akan menjadi seperti dibawah
+ini :
+
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/89a0d862-b2ab-40fd-8829-08d1804202cd)
+
 ```C++
 #include <iostream>
 #include <stdio.h>
