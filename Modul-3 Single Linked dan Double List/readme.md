@@ -514,9 +514,13 @@ nama dan usia anda.
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/f3e6575d-203d-418f-b3ac-6745b44d5585)
 
 b. Hapus data Akechi
+
 c. Tambahkan data berikut diantara John dan Jane : Futaba 18
+
 d. Tambahkan data berikut diawal : Igor 20
+
 e. Ubah data Michael menjadi : Reyn 18
+
 f. Tampilkan seluruh data
 
 ```C++
