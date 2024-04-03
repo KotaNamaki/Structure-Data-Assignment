@@ -1101,16 +1101,47 @@ int main()
 
 3. Perintah
 
-    a). Tambahkan data berikut diantara Farrel dan Denis: Wati 2330004
+a). Tambahkan data berikut diantara Farrel dan Denis: Wati 2330004
 
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/e464b7c3-d506-4bc5-9504-c5d5092d6b6d) 
    
-    b). Hapus Data Denis
+b). Hapus Data Denis
 
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/bfcb5dde-dd8e-47f1-b69e-1386e869d2b0)
+
+c). Tambahkan data berikut di awal: Owi 2330000
+
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/15078d18-3e58-4c53-a101-2c3838d3edc5)
+
+d). Tambahkan data berikut di akhir: David 23300100
+
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/2b1c46c2-5339-483a-b04f-9deb085ed338)
+
+e). Ubah data Udin menjadi data berikut: Idin 23300045
+
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/2e1d2c58-4d63-4be3-b5bf-20e17f89b2c3)
+
+f). Ubah data terkahir menjadi berikut: Lucy 23300101
+
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/23dad5b3-8919-462e-9870-4ea5baba6857)
+
+g). Hapus Data Awal
+
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/23ebaab8-76ae-4f4d-8af3-12cec59f4ffe)
+
+
+h). Ubah data awal menjadi berikut: Bagas 2330002
+
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/ad677666-57fb-4b4e-b52d-ef6dfecf323a)
+
+i). Hapus data akhir
+
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/715f773c-0f4b-43b0-8fa8-e009cd806bf8)
+
+J). Tampilkan Seluruh Data
+
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/1eaa7ba4-ca13-4bce-b284-8f24c04d5d30)
 
 ## Daftar Pustaka
 
 [1]. Sachi Nandan Mohanty, Pabitra Kumar Tripathy, Data Structure and Algorithms Using C++: A Practical Implementation, New York:Scrivener Publishing LLC, 14 January 2021.
-
-[2]. 
