@@ -584,6 +584,26 @@ int main()
 ```
 
 ### Screenshot
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/08379b7a-e754-4fdf-aef5-7588aa168822)
+
+(Dikarenakan terjadi error di compiler windowss, saya di-perbolehkan menggunakan compiler online yang dibolehkan sama kaka Ramadhan.)
+
+
+
+## Unguided
+
+### Buatlah program menu Linked List Non Circular untuk menyimpan Nama dan NIM
+mahasiswa, dengan menggunakan input dari user.
+
+1. Buatlah menu untuk menambahkan, mengubah, menghapus, dan melihat Nama dan
+NIM mahasiswa, berikut contoh tampilan output dari nomor 1:
+
+- Tampilan Menu
+  ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/f123c124-e000-4cd7-a45d-24a5c40f3897)
+
+- Tampilan Operasi Tambah
+  ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/9c3f290c-f38f-4054-b66c-fda108e3efe3)
+
 
 ## Daftar Pustaka
 
