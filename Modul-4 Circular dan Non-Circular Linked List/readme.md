@@ -1090,7 +1090,21 @@ int main()
 
 ### Screenshot
 
+1. Tampilan Prosedur
 
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/c8a6c19e-6ab1-4c3e-b63a-6d860e349ac2)
+
+
+2. Tampilan Akhir
+
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/c32ae40c-c7d1-4991-9d6f-ef1459715a32)
+
+3. Perintah
+
+    a). Tambahkan data berikut diantara Farrel dan Denis: Wati 2330004
+
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/e464b7c3-d506-4bc5-9504-c5d5092d6b6d)
+   
 ## Daftar Pustaka
 
 [1]. Sachi Nandan Mohanty, Pabitra Kumar Tripathy, Data Structure and Algorithms Using C++: A Practical Implementation, New York:Scrivener Publishing LLC, 14 January 2021.
