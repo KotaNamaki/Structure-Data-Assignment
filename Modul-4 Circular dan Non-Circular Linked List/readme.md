@@ -1095,6 +1095,9 @@ int main()
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/c8a6c19e-6ab1-4c3e-b63a-6d860e349ac2)
 
 
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/980c879a-4675-4b0d-815e-382612296a94)
+
+
 2. Tampilan Akhir
 
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/c32ae40c-c7d1-4991-9d6f-ef1459715a32)
