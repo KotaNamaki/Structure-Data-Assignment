@@ -7,7 +7,7 @@ using namespace std;
 struct Node
 {
     string nama;
-    long nim;
+    int nim;
     Node *next;
 };
 
@@ -36,7 +36,7 @@ bool isEmpty()
 }
 
 // Fungsi untuk memasukkan data di depan linked list
-void insertDepan(string nama, long nim)
+void insertDepan(string nama, int nim)
 {
     // Membuat node baru
     Node *baru = new Node;
@@ -57,7 +57,7 @@ void insertDepan(string nama, long nim)
 }
 
 // Fungsi untuk memasukkan data di belakang linked list
-void insertBelakang(string nama, long nim)
+void insertBelakang(string nama, int nim)
 {
     // Membuat node baru
     Node *baru = new Node;
@@ -92,10 +92,10 @@ int hitungList()
 }
 
 // Fungsi untuk memasukkan data di tengah linked list
-void insertTengah(string nama, long nim, int posisi)
+void insertTengah(string nama, int nim, int posisi)
 {
     // Mengecek apakah posisi valid
-    if (posisi < 1 || posisi > hitungList())
+    if (posisi < 1 || posisi > hitungList() + 1)
     {
         cout << "Posisi di luar jangkauan!" << endl;
         return;
@@ -124,6 +124,12 @@ void insertTengah(string nama, long nim, int posisi)
     // Menghubungkan node baru di antara node bantu dan node selanjutnya
     baru->next = bantu->next;
     bantu->next = baru;
+
+    // Jika node baru ditambahkan di akhir, maka perbarui tail
+    if (baru->next == NULL)
+    {
+        tail = baru;
+    }
 }
 
 // Fungsi untuk menghapus data di depan linked list
@@ -138,16 +144,16 @@ void hapusDepan()
 
     // Menyimpan node yang akan dihapus
     Node *hapus = head;
-
+    
     // Memperbarui head untuk menunjuk ke node selanjutnya
     head = head->next;
-
+    Node *temp = tail;
     // Jika head menjadi NULL, maka tail juga menjadi NULL
     if (head == NULL)
     {
         tail = NULL;
     }
-
+    cout<<"Data "<<temp->nama<<" telah dihapus"<<endl;
     // Menghapus node yang disimpan
     delete hapus;
 }
@@ -164,6 +170,7 @@ void hapusBelakang()
 
     // Menyimpan node yang akan dihapus
     Node *hapus = tail;
+    Node *temp = head->next;
 
     // Mencari node sebelum node terakhir
     Node *bantu = head;
@@ -176,9 +183,15 @@ void hapusBelakang()
     // Memperbarui tail untuk menunjuk ke node sebelum node terakhir
     tail = bantu;
     tail->next = NULL;
-
+    string nama = temp->nama;
     // Menghapus node yang disimpan
     delete hapus;
+
+    // Mendapatkan nama dari node yang dihapus
+    
+
+    // Tampilkan pesan dengan nama node yang dihapus
+    cout << "Data " << nama << " Telah dihapus" << endl;
 }
 
 // Fungsi untuk menghapus data di tengah linked list
@@ -198,6 +211,7 @@ void hapusTengah(int posisi)
     }
 
     // Mencari node sebelum node yang akan dihapus
+    Node *temp = head->next;
     Node *bantu = head;
     Node *hapus;
     int nomor = 1;
@@ -220,45 +234,47 @@ void hapusTengah(int posisi)
     }
 
     // Menghapus node yang disimpan
+    cout<<"Data "<<temp->nama <<" Telah dihapus"<<endl;
     delete hapus;
 }
 
 // Fungsi untuk mengubah data di depan linked list
-void ubahDepan(string nama, long nim)
+void ubahDepan(string nama, int nim)
 {
     // Jika linked list kosong, maka tampilkan pesan
+    Node *temp = head;
     if (isEmpty())
     {
         cout << "Linked list kosong!" << endl;
         return;
     }
-
+    cout << " Data " << temp->nama << " ";
     // Mengubah data node head
     head->nama = nama;
     head->nim = nim;
-
-    cout << "Data berhasil diubah!" << endl;
+    cout << "Telah diganti dengan " << head->nama << endl;
 }
 
 // Fungsi untuk mengubah data di belakang linked list
-void ubahBelakang(string nama, long nim)
+void ubahBelakang(string nama, int nim)
 {
     // Jika linked list kosong, maka tampilkan pesan
+    Node *temp = tail;
     if (isEmpty())
     {
         cout << "Linked list kosong!" << endl;
         return;
     }
-
+    cout << " Data " << temp->nama << " ";
     // Mengubah data node tail
     tail->nama = nama;
     tail->nim = nim;
 
-    cout << "Data berhasil diubah!" << endl;
+    cout << "telah diganti dengan " << tail->nama << endl;
 }
 
 // Fungsi untuk mengubah data di tengah linked list
-void ubahTengah(string nama, long nim, int posisi)
+void ubahTengah(string nama, int nim, int posisi)
 {
     // Mengecek apakah posisi valid
     if (posisi < 1 || posisi > hitungList())
@@ -274,19 +290,21 @@ void ubahTengah(string nama, long nim, int posisi)
     }
 
     // Mencari node di posisi yang diinginkan
+
     Node *bantu = head;
+    Node *temp = head->next;
     int nomor = 1;
     while (nomor < posisi)
     {
         bantu = bantu->next;
         nomor++;
     }
-
+    cout << " Data " << temp->nama << " ";
     // Mengubah data node yang ditemukan
     bantu->nama = nama;
     bantu->nim = nim;
 
-    cout << "Data berhasil diubah!" << endl;
+    cout << "telah diubah dengan " << bantu->nama << endl;
 }
 
 // Fungsi untuk menghapus seluruh isi linked list
@@ -332,7 +350,7 @@ int main()
 {
     init();
     string nama;
-    long nim;
+    int nim;
     int posisi;
     while (true)
     {
@@ -361,19 +379,19 @@ int main()
         {
         case 1:
             cout << "-Tambah Depan-" << endl
-                << endl;
+                 << endl;
             cout << "Masukan Nama: ";
             cin >> nama;
             cout << "Masukan NIM: ";
             cin >> nim;
             cout << endl
-                << endl;
+                 << endl;
             insertDepan(nama, nim);
             cout << "Data telah dimasukan " << endl;
             break;
         case 2:
             cout << "-Tambah Belakang-" << endl
-                << endl;
+                 << endl;
             cout << "Masukan nama: ";
             cin >> nama;
             cout << "Masukan NIM: ";
@@ -383,19 +401,19 @@ int main()
             break;
         case 3:
             cout << "-Tambah Tengah-" << endl
-                << endl;
+                 << endl;
             cout << "Masukan Nama: ";
             cin >> nama;
             cout << "Masukan NIM: ";
             cin >> nim;
-            cout << "Masukan Posisi: ";
+            cout << "Masukan Posisi (bisa lebih dari jumlah data saat ini): ";
             cin >> posisi;
             insertTengah(nama, nim, posisi);
             cout << "Data Telah dimasukkan" << endl;
             break;
         case 4:
             cout << "-Ubah Depan-" << endl
-                << endl;
+                 << endl;
             cout << "Masukan Nama: ";
             cin >> nama;
             cout << "Masukan Nim: ";
@@ -404,18 +422,18 @@ int main()
             break;
         case 5:
             cout << "-Ubah Belakang-" << endl
-                << "\n";
+                 << "\n";
             cout << "Masukan Nama: ";
             cin >> nama;
             cout << "Masukan NIM: ";
             cin >> nim;
             ubahBelakang(nama, nim);
             cout << "n"
-                << "\n";
+                 << "\n";
             break;
         case 6:
             cout << "-Ubah tengah-" << endl
-                << "\n";
+                 << "\n";
             cout << "Masukan Nama: ";
             cin >> nama;
             cout << "Masukan NIM: ";
@@ -424,7 +442,7 @@ int main()
             cin >> posisi;
             ubahTengah(nama, nim, posisi);
             cout << "\n"
-                << "\n";
+                 << "\n";
             break;
         case 7:
             hapusDepan();
@@ -442,10 +460,13 @@ int main()
             clearList();
             break;
         case 11:
+            system("cls");
             tampil();
             break;
         case 0:
             exit(0);
+        case 100:
+        system("cls");
         }
     }
     return 0;
