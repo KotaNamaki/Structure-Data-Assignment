@@ -599,10 +599,12 @@ mahasiswa, dengan menggunakan input dari user.
 NIM mahasiswa, berikut contoh tampilan output dari nomor 1:
 
 - Tampilan Menu
-  ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/f123c124-e000-4cd7-a45d-24a5c40f3897)
+
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/f123c124-e000-4cd7-a45d-24a5c40f3897)
 
 - Tampilan Operasi Tambah
-  ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/9c3f290c-f38f-4054-b66c-fda108e3efe3)
+
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/9c3f290c-f38f-4054-b66c-fda108e3efe3)
 
 
 ## Daftar Pustaka
