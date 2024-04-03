@@ -623,21 +623,25 @@ NIM mahasiswa, berikut contoh tampilan output dari nomor 1:
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/6b09d7e6-2c62-411d-9fda-ba874d58a4d5)
 
 3. Lakukan perintah berikut:
-a) Tambahkan data berikut diantara Farrel dan Denis:
-Wati 2330004
+
+a) Tambahkan data berikut diantara Farrel dan Denis: Wati 2330004
+
 b) Hapus data Denis
-c) Tambahkan data berikut di awal:
-Owi 2330000
-d) Tambahkan data berikut di akhir:
-David 23300100
-e) Ubah data Udin menjadi data berikut:
-Idin 23300045
-f) Ubah data terkahir menjadi berikut:
-Lucy 23300101
+
+c) Tambahkan data berikut di awal: Owi 2330000
+
+d) Tambahkan data berikut di akhir: David 23300100
+
+e) Ubah data Udin menjadi data berikut: Idin 23300045
+
+f) Ubah data terkahir menjadi berikut: Lucy 23300101
+
 g) Hapus data awal
-h) Ubah data awal menjadi berikut:
-Bagas 2330002
+
+h) Ubah data awal menjadi berikut: Bagas 2330002
+
 i) Hapus data akhir
+
 j) Tampilkan seluruh data
 
 
