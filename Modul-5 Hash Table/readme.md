@@ -10,7 +10,10 @@ Tabel hash dirancang untuk meminimalkan jumlah tabrakan, yang terjadi ketika dua
   
 Untuk pemahaman komprehensif tentang teori dan implementasi tabel hash, buku "The Joys of Hashing: Hash Table Programming with C" memberikan pandangan mendalam tentang desain dan implementasi tabel hash, termasuk strategi resolusi tabrakan, teknik pengubahan ukuran, dan penggunaan fungsi hash heuristik[2].
 </p>
+
+
 ## Daftar Pustaka
+
 [1].	Michael A. Bender, Alex Conway, Martin Farach-Colton, William Kuszmaul, Guido Tagliavini, “Iceberg Hashing,” Optimizing Many Hash-Table Criteria at Once, Volume 70, Issue 6 December 2023.
 
 [2].	Thomas Mailund, The Joys of Hashing: Hash Table Programming with C [1 ed.], Aarhus N, Denmark, 2019.
