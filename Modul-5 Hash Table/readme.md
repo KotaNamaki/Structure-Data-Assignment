@@ -405,112 +405,135 @@ return 0;
 
 ## Unguided 
 
+Implementasikan hash table untuk menyimpan data mahasiswa. Setiap mahasiswa memiliki NIM dan nilai. Implementasikan fungsi untuk menambahkan data baru, menghapus data, mencari data berdasarkan NIM, dan mencari data berdasarkan nilai. Dengan ketentuan :
+
+a. Setiap mahasiswa memiliki NIM dan nilai.
+
+b. Program memiliki tampilan pilihan menu berisi poin C.
+
+c. Implementasikan fungsi untuk menambahkan data baru, menghapus data, mencari data berdasarkan NIM, dan mencari data berdasarkan rentang nilai (80 – 90).
+
 ```C++
 #include <iostream>
 #include <list>
 using namespace std;
 
+// Class to represent a Mahasiswa (student)
 class Mahasiswa {
 public:
-    int nim;
-    int nilai;
+  int nim;  // Student ID
+  int nilai; // Grade
 };
 
+// Class to implement a Hash Table for storing Mahasiswa data
 class HashTable {
 private:
-    list<Mahasiswa> *table;
-    int total_elements;
+  list<Mahasiswa> *table;  // Array of lists to store Mahasiswa objects
+  int total_elements;     // Total number of elements in the hash table
 
 public:
-    HashTable(int n) {
-        total_elements = n;
-        table = new list<Mahasiswa>[total_elements];
-    }
+  // Constructor to initialize the hash table with a specified size
+  HashTable(int n) {
+    total_elements = n;
+    table = new list<Mahasiswa>[total_elements]; // Allocate memory for the array of lists
+  }
 
-    void insertMahasiswa(int nim, int nilai) {
-        int index = nim % total_elements;
-        table[index].push_back({nim, nilai});
-    }
 
-    void deleteMahasiswa(int nim) {
-        int index = nim % total_elements;
-        list<Mahasiswa>::iterator it;
-        for (it = table[index].begin(); it != table[index].end(); it++) {
-            if (it->nim == nim) {
-                table[index].erase(it);
-                break;
-            }
+  // "// Fungsi ini untuk memasukkan data mahasiswa ke dalam hash table (insert Mahasiswa)"
+  void insertMahasiswa(int nim, int nilai) {
+    int index = nim % total_elements; // Calculate the hash index using modulo operator
+    table[index].push_back({nim, nilai}); // Add the Mahasiswa object to the corresponding list
+  }
+
+
+  // "// Fungsi ini untuk menghapus data mahasiswa dari hash table berdasarkan nim (delete Mahasiswa)"
+  void deleteMahasiswa(int nim) {
+    int index = nim % total_elements;
+    list<Mahasiswa>::iterator it;
+    for (it = table[index].begin(); it != table[index].end(); it++) {
+      if (it->nim == nim) {
+        table[index].erase(it); // Remove the element from the list if nim matches
+        break;
+      }
+    }
+  }
+
+
+  // "// Fungsi ini untuk mencari data mahasiswa berdasarkan nim (search Mahasiswa by NIM)"
+  void searchMahasiswaByNIM(int nim) {
+    int index = nim % total_elements;
+    list<Mahasiswa>::iterator it;
+    for (it = table[index].begin(); it != table[index].end(); it++) {
+      if (it->nim == nim) {
+        cout << "NIM: " << it->nim << ", Nilai: " << it->nilai << endl;
+        break;
+      }
+    }
+  }
+  // "// Fungsi ini untuk mencari data mahasiswa berdasarkan range nilai (search Mahasiswa by range)"
+  void searchMahasiswaByRange(int min, int max) {
+    for (int i = 0; i < total_elements; i++) {
+      list<Mahasiswa>::iterator it;
+      for (it = table[index].begin(); it != table[index].end(); it++) {
+        if (it->nilai >= min && it->nilai <= max) {
+          cout << "NIM: " << it->nim << ", Nilai: " << it->nilai << endl;
         }
+      }
     }
-
-    void searchMahasiswaByNIM(int nim) {
-        int index = nim % total_elements;
-        list<Mahasiswa>::iterator it;
-        for (it = table[index].begin(); it != table[index].end(); it++) {
-            if (it->nim == nim) {
-                cout << "NIM: " << it->nim << ", Nilai: " << it->nilai << endl;
-                break;
-            }
-        }
-    }
-
-    void searchMahasiswaByRange(int min, int max) {
-        for (int i = 0; i < total_elements; i++) {
-            list<Mahasiswa>::iterator it;
-            for (it = table[i].begin(); it != table[i].end(); it++) {
-                if (it->nilai >= min && it->nilai <= max) {
-                    cout << "NIM: " << it->nim << ", Nilai: " << it->nilai << endl;
-                }
-            }
-        }
-    }
+  }
 };
 
 int main() {
-    int nim;
-    int nilai;
-    int min;
-    int max;
-    
-    // Create hash table
-    HashTable ht(100);
-    while (true){
-        cout<<"Menu"<<endl;
-        cout<<"1. insert data"<<endl;
-      cout<< "2. delete data" <<endl;
-      cout<< "3. search by him" <<endl;
-      cout <<" 4. search by range"<< endl;
-      cout<<"\n";
-      int pilihan;
-      cout << "Masukan Pilihan: ";
-      cin>>pilihan;
+  int nim, nilai, min, max;
 
-      switch(pilihan) {
-        case 1:
-        cout<< "Masukan nim: ";cin >> nim;
-        cout<< "Masukan Nilai: " ; cin >> nilai;
+  // Create a HashTable object with a capacity of 100 elements
+  HashTable ht(100);
+
+  while (true) {
+    cout << "Menu" << endl;
+    cout << "1. Insert data" << endl;
+    cout << "2. Delete data" << endl;
+    cout << "3. Search by NIM" << endl;
+    cout << "4. Search by range" << endl;
+    cout << "\n";
+
+    int pilihan;
+    cout << "Masukan Pilihan: ";
+    cin >> pilihan;
+
+    switch (pilihan) {
+      case 1:
+        cout << "Masukan nim: ";
+        cin >> nim;
+        cout << "Masukan Nilai: ";
+        cin >> nilai;
         ht.insertMahasiswa(nim, nilai);
         break;
-        case 2:
-        cout << " Masukan nim: "; cin>> nim;
-        ht.deleteMahasiswa(nim) ;
+      case 2:
+        cout << "Masukan nim: ";
+        cin >> nim;
+        ht.deleteMahasiswa(nim);
         break;
-        case 3:
-        cout<<" Masukan Nim: " ;cin>>nim;
+      case 3:
+        cout << "Masukan NIM: ";
+        cin >> nim;
         ht.searchMahasiswaByNIM(nim);
         break;
-        case 4:
-        cout<<"Masukan nilai min: ";cin>> min;
-        cout<<"Masukan nilai max: ";cin>> max;
-        ht.searchMahasiswaByRange(min, max) ;
+      case 4:
+        cout << "Masukan nilai min: ";
+        cin >> min;
+        cout << "Masukan nilai max: ";
+        cin >> max;
+        ht.searchMahasiswaByRange(min, max);
         break;
-        case 0:
+      case 0:
         exit(0);
-      }
-        
     }
-    return 0;
+  }
+
+  return 0;
 }
+
 ```
 
 
