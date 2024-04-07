@@ -535,6 +535,8 @@ int main() {
 }
 
 ```
+### Screenshot 
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/c6598ca8-29d6-4388-95a2-640db2754ec0)
 
 
 ## Daftar Pustaka
