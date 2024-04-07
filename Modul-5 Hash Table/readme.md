@@ -228,6 +228,10 @@ return 0;
 }
 
 ```
+#### Screenshot
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/aa0ade3c-cc34-4358-b0f6-27248d3c9dc6)
+
+
 
 ### Guided 2
 
@@ -402,6 +406,11 @@ return 0;
 
 }
 ```
+#### ScreenShot
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/728dc200-8644-4b6a-a99f-b3b6e85d02df)
+
+
+
 
 ## Unguided 
 
