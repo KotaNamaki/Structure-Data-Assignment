@@ -242,6 +242,10 @@ int main() { // Fungsi utama
 }
 
 ```
+
+### Screenshot
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/b12e75c2-a0f3-4e39-ae28-43ee7443775b)
+
 ## Daftar Pustaka
 
 [1]. Roida Sihotang, Haris Saputro, Satria Novari, SISTEM INFORMASI PENGGAJIAN LKPENGLISH ACADEMY MENGGUNAKAN EMBARCADERO XE2 BERBASIS CLIET SERVER, Vol. 4, No. 1, Jurnal Teknik Informatika Mahakarya (JTIM), Juni 2021.
