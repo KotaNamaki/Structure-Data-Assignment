@@ -364,4 +364,4 @@ Dengan demikian, penerapan algoritma queue pada aplikasi pemesanan obat berbasis
 
 ## Daftar Pustaka
 
-[1]. 
+[1]. Agam Rizky, PENERAPAN ALGORITMA QUEUE PADA APLIKASI PEMESANAN OBAT BERBASIS MOBILE PADA APOTEK ARUBA FARMA DEPOK, Volume 1, No. 5, LOGIC : Jurnal Ilmu Komputer dan Pendidikan, Agustus 2023
