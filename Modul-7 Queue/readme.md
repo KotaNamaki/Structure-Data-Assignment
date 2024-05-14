@@ -10,6 +10,8 @@ Algoritma queue sering digunakan dalam berbagai aplikasi dan teknologi untuk men
 
 Dengan menggunakan algoritma queue, sistem antrian dapat diatur dengan baik sehingga pasien dapat mengetahui ketersediaan obat dan nomor antrian mereka tanpa harus datang terlebih dahulu ke apotek. Hal ini membantu mengurangi waktu tunggu pasien dan meningkatkan pengalaman pelayanan di apotek [1].
 </p>
+
+
 ## Guided
 
 ```C++
@@ -131,6 +133,8 @@ int main()
     return 0;
 }
 ```
+
+
 ### Screenshot
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/e11e6c0b-8c9b-4c19-9f0b-c5c24f23ec4d)
 
