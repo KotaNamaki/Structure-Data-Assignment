@@ -1,4 +1,4 @@
-# <h1 align="center"> Laporan Praktium Modul-7 Queue </h1>
+# <h1 align="center"> Laporan Praktium Modul-8 Searching</h1>
 <p align="center"> Andhika Haqqa Syahrony <p>
 <p align="center"> 2311102197@ittelkom-pwt.ac.id</p>
 
