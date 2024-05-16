@@ -265,6 +265,50 @@ int main()
 
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/5ea6277d-d9c6-447e-b1de-0fbe2f441fb6)
 
+### Diketahui data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma Sequential Search!
+
+```C++
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  // Data yang diberikan
+  int data[] = {9, 4, 1, 4, 7, 10, 5, 4, 12, 4};
+  int n = sizeof(data) / sizeof(data[0]); // Jumlah elemen dalam data
+
+  // Inisialisasi variabel untuk menghitung angka 4
+  int count = 0;
+
+  // Algoritma sequential search
+  for (int i = 0; i < n; i++) {
+    if (data[i] == 4) {
+      count++; // Hitung angka 4
+    }
+  }
+
+  // Hasil
+  cout << "Jumlah angka 4: " << count << endl;
+
+  return 0;
+}
+
+```
+
+
+### Screenshot Unguided-3
+
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/ef311bdc-96d2-426e-bd47-9323ef18fd3d)
+
+
+## kesimpulan
+
+<p align = "justify">
+Dari hasil analisis perbandingan antara algoritma Binary Search dan Regular Search Expression dalam pencarian data, dapat diambil kesimpulan sebagai berikut:
+    
+-Kedua algoritma memiliki kelebihan dan kekurangan masing-masing, binary Search cocok untuk pencarian data besar dan terurut, sementara Regular Search Expression lebih fleksibel dalam pencarian berdasarkan pola.
+Pemilihan algoritma pencarian harus disesuaikan dengan karakteristik data dan kebutuhan pencarian yang spesifik.
+</p>
 
 ## Daftar Pustaka
 [1]. Fenina Adline Twince Tobing, Rena Nainggolan, ANALISIS PERBANDINGAN PENGGUNAAN METODE BINARY SEARCH DENGAN REGULAR SEARCH EXPRESSION, Vol. 4, No. 2, 168-172, Oktober 2020.
