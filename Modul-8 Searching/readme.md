@@ -304,10 +304,7 @@ int main() {
 ## kesimpulan
 
 <p align = "justify">
-Dari hasil analisis perbandingan antara algoritma Binary Search dan Regular Search Expression dalam pencarian data, dapat diambil kesimpulan sebagai berikut:
-    
--Kedua algoritma memiliki kelebihan dan kekurangan masing-masing, binary Search cocok untuk pencarian data besar dan terurut, sementara Regular Search Expression lebih fleksibel dalam pencarian berdasarkan pola.
-Pemilihan algoritma pencarian harus disesuaikan dengan karakteristik data dan kebutuhan pencarian yang spesifik.
+Dari hasil analisis perbandingan antara algoritma Binary Search dan Regular Search Expression dalam pencarian data, dapat diambil dari Kedua algoritma memiliki kelebihan dan kekurangan masing-masing, binary Search cocok untuk pencarian data besar dan terurut, sementara Regular Search Expression lebih fleksibel dalam pencarian berdasarkan pola. Pemilihan algoritma pencarian harus disesuaikan dengan karakteristik data dan kebutuhan pencarian yang spesifik. Dari perbandingan antara algoritma Binary Search dan Regular Search Expression, dapat disimpulkan bahwa Binary Search efisien untuk pencarian data besar dan terurut, sementara Regular Search Expression lebih fleksibel dalam pencarian berdasarkan pola. Pemilihan algoritma pencarian harus disesuaikan dengan karakteristik data dan kebutuhan pencarian yang spesifik [1].
 </p>
 
 ## Daftar Pustaka
