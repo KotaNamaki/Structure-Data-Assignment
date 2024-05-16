@@ -3,7 +3,7 @@
 <p align="center"> 2311102197@ittelkom-pwt.ac.id</p>
 
 ## Dasar Teori
-<p>
+<p align = "Justify">
 
 teori pencarian yang dibahas, yaitu Binary Search dan Regular Search Expression. Berikut adalah penjelasan dasar teori dari kedua metode pencarian tersebut:
 
