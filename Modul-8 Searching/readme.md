@@ -3,7 +3,7 @@
 <p align="center"> 2311102197@ittelkom-pwt.ac.id</p>
 
 ## Dasar Teori
-<p text-align: justify>
+<p>
 
 teori pencarian yang dibahas, yaitu Binary Search dan Regular Search Expression. Berikut adalah penjelasan dasar teori dari kedua metode pencarian tersebut:
 
@@ -21,8 +21,6 @@ Kelebihan dari Regular Search Expression adalah kemampuannya untuk mencari data 
 Dengan pemahaman dasar teori dari Binary Search dan Regular Search Expression, pengguna dapat memilih metode pencarian yang sesuai dengan kebutuhan dan karakteristik data yang akan dicari [1].
 </p>
 p {
-text-align: justify
-}
 
 ## Daftar Pustaka
 [1]. Fenina Adline Twince Tobing, Rena Nainggolan, ANALISIS PERBANDINGAN PENGGUNAAN METODE BINARY SEARCH DENGAN REGULAR SEARCH EXPRESSION, Vol. 4, No. 2, 168-172, Oktober 2020.
