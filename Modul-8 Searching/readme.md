@@ -3,7 +3,7 @@
 <p align="center"> 2311102197@ittelkom-pwt.ac.id</p>
 
 ## Dasar Teori
-<p align = "left">
+<p text-align = "left">
 
 <strong>Binary Search:</strong>
 
