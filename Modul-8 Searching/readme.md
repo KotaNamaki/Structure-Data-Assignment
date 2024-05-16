@@ -205,6 +205,65 @@ int main() {
 
 ![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/9c3be4e3-0107-4b5e-a622-84cc2faae6ce)
 
+### Buatlah sebuah program yang dapat menghitung banyaknya huruf vocal dalam sebuah kalimat menggunakan algoritma searching!
+
+```C++
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+// Fungsi untuk menghitung jumlah huruf vokal dalam kalimat
+int HitungVokal(string kalimat)
+{
+    // Inisialisasi variabel penghitung
+    int count = 0;
+
+    // Looping melalui setiap karakter dalam kalimat
+    for (int i = 0; i < kalimat.length(); i++)
+    {
+        // Mendapatkan karakter saat ini
+        char huruf = kalimat[i];
+
+        // Memeriksa apakah karakter adalah huruf vokal
+        if (huruf == 'a' || huruf == 'A' ||
+            huruf == 'e' || huruf == 'E' ||
+            huruf == 'i' || huruf == 'I' ||
+            huruf == 'o' || huruf == 'O' ||
+            huruf == 'u' || huruf == 'U')
+        {
+            // Jika vokal, tambahkan ke penghitung
+            count++;
+        }
+    }
+
+    // Mengembalikan jumlah vokal
+    return count;
+}
+
+int main()
+{
+    // Deklarasi variabel untuk kalimat
+    string kalimat;
+
+    // Minta input kalimat dari pengguna
+    cout << "Masukkan kalimat: ";
+    getline(cin, kalimat);
+
+    // Panggil fungsi untuk menghitung vokal
+    int jumlahVokal = HitungVokal(kalimat);
+
+    // Tampilkan hasil penghitungan
+    cout << "Jumlah huruf vokal dalam kalimat: " << jumlahVokal << endl;
+
+    return 0;
+}
+
+```
+
+### Screenshot Unguided-2
+
+![image](https://github.com/KotaNamaki/Structure-Data-Assignment/assets/125143781/5ea6277d-d9c6-447e-b1de-0fbe2f441fb6)
 
 
 ## Daftar Pustaka
