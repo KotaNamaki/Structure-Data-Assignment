@@ -1022,13 +1022,13 @@ int main() {
 ## Kesimpulan 
 <p align="justify">
 
-  Tree: 
+  <strong> Tree: </strong>
 - Pohon adalah struktur data hierarkis yang terdiri dari simpul yang saling terhubung dengan satu simpul induk dan satu atau lebih simpul anak.
 - Pohon digunakan dalam pemrograman untuk representasi data terstruktur dan operasi pencarian efisien.
 - Beberapa jenis pohon yang umum digunakan termasuk pohon pencarian biner, pohon merah-hitam, pohon B, dan pohon heap.
 - Operasi pada pohon meliputi penelusuran, pencarian, penambahan, penghapusan, dan rotasi.
 
-Graph: 
+<strong> Graph: </strong> 
 - Graf adalah struktur data yang terdiri dari simpul yang terhubung oleh sisi.
 - Graf digunakan dalam pemrograman untuk merepresentasikan hubungan antara entitas, seperti jaringan sosial, rute perjalanan, dan sirkuit elektronik.
 - Algoritma graf digunakan untuk berbagai tujuan, seperti pencarian jalur terpendek, pencarian terhubung, pencarian lintasan, dan alur maksimum.
