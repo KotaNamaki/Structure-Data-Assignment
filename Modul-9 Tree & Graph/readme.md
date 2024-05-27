@@ -1039,3 +1039,5 @@ Dengan pemahaman tentang Tree dan Graphs, pengembang dapat memilih struktur data
 </p>
 
 ## Daftar Pustaka
+
+[1]. Berry, A., Simonet, G., Computing the Atom Graph of a Graph and the Union Join Graph of a Hypergraph, Vol. 14, Hal. 1-20, 28 November 2021.
