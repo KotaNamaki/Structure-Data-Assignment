@@ -1,4 +1,4 @@
-z   # Struct sederhana untuk menyimpan data film
+   # Struct sederhana untuk menyimpan data film
 import os
 import time
 class Movie:
@@ -74,11 +74,11 @@ def main():
             os.system('pause')
         elif pilihan == '2':
             os.system('cls')
-            start_time = time.time()
             rating_DC = input(f"Halo {nama}, masukan rating yang anda inginkan: ")
+            start_time = time.time()
             RatingSearching("DC", rating_DC)
             durasi = time.time() - start_time
-            print(f"Waktu: {durasi:.4f} detik")
+            print(f"Waktu: {durasi:.12f} detik")
             os.system('pause')
         elif pilihan == '3':
             os.system('cls')
