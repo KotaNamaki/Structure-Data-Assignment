@@ -1,6 +1,8 @@
    # Struct sederhana untuk menyimpan data film
+import matplotlib.pyplot as plt
 import os
 import time
+from datetime import datetime
 class Movie:
     def __init__(film, name, rating):
         film.name = name  # Nama film
@@ -54,7 +56,10 @@ def RatingSearching(genre, max_rating, index=0):
 
 
 def main():
-    
+    time_logs = []  # List untuk menyimpan waktu eksekusi
+    rating_inputs = []  # List untuk menyimpan rating yang diinput pengguna
+    time_logs_dc = []  
+    rating_inputs_dc = []
     # Menambahkan data film Marvel dan DC ke dalam dictionary
     kamusPush("Marvel", "X-Men, 2000", 7.3)
     kamusPush("Marvel", "Spider-Man, 2002", 7.4)
@@ -91,30 +96,26 @@ def main():
     kamusPush("Marvel", "Black Panther: Wakanda Forever", 6.9)
 
 
-    kamusPush("DC", "The Dark Knight, 2008", 9.0)
-    kamusPush("DC", "Joker, 2019", 8.4)
-    kamusPush("DC", "The Batman, 2022", 7.8)
-    kamusPush("DC", "The Dark Knight, 2008", 9.0)
-    kamusPush("DC", "The Lion King, 1994", 8.5)
-    kamusPush("DC", "Aladdin, 1992", 8.0)
-    kamusPush("DC", "Frozen, 2013", 7.4)
-    kamusPush("DC", "Toy Story, 1995", 8.3)
-    kamusPush("DC", "Zootopia, 2016", 8.0)
-    kamusPush("DC", "Moana, 2016", 7.6)
-    kamusPush("DC", "Beauty and the Beast, 1991", 8.0)
-    kamusPush("DC", "Tangled, 2010", 7.7)
-    kamusPush("DC", "Mulan, 1998", 7.6)
-    kamusPush("DC", "The Little Mermaid, 1989", 7.6)
-    kamusPush("DC", "Cinderella, 1950", 7.3)
-    kamusPush("DC", "Big Hero 6, 2014", 7.8)
-    kamusPush("DC", "Ratatouille, 2007", 8.1)
-    kamusPush("DC", "Wreck-It Ralph, 2012", 7.7)
-    kamusPush("DC", "Finding Nemo, 2003", 8.2)
-    kamusPush("DC", "Up, 2009", 8.3)
-    kamusPush("DC", "Inside Out, 2015", 8.1)
-    kamusPush("DC", "Coco, 2017", 8.4)
-    kamusPush("DC", "The Incredibles, 2004", 8.0)
-    kamusPush("DC", "Soul, 2020", 8.0)
+    kamusPush("DC", "The Dark Knight", 9.0)
+    kamusPush("DC", "The Dark Knight Rises", 8.4)
+    kamusPush("DC", "Batman Begins", 8.2)
+    kamusPush("DC", "Wonder Woman", 7.4)
+    kamusPush("DC", "Man of Steel", 7.1)
+    kamusPush("DC", "Aquaman", 6.8)
+    kamusPush("DC", "Shazam!", 7.0)
+    kamusPush("DC", "Justice League", 6.1)
+    kamusPush("DC", "Batman v Superman: Dawn of Justice", 6.4)
+    kamusPush("DC", "Suicide Squad", 5.9)
+    kamusPush("DC", "Birds of Prey", 6.1)
+    kamusPush("DC", "Wonder Woman 1984", 5.4)
+    kamusPush("DC", "The Suicide Squad", 7.2)
+    kamusPush("DC", "Black Adam", 6.3)
+    kamusPush("DC", "The Flash", 6.7)
+    kamusPush("DC", "Blue Beetle", 6.1)
+    kamusPush("DC", "Aquaman and the Lost Kingdom", 5.9)
+    kamusPush("DC", "Joker", 8.4)
+    kamusPush("DC", "The Batman", 7.8)
+    kamusPush("DC", "Superman Returns", 6.0)
     print("Selamat datang di Sistem Pencarian Film Terbaik Marvel dan DC!")
     nama = input("Masukkan nama Anda: ")
     os.system('cls')
@@ -129,18 +130,22 @@ def main():
         
         if pilihan == '1':
             os.system('cls')
-            rating_Marvel = input(f"Halo {nama}, masukan rating yang anda inginkan: ")
+            rating = input(f"Halo {nama}, masukan rating yang anda inginkan: ")
             start_time = time.time()
-            RatingSearching("Marvel", rating_Marvel )
+            RatingSearching("Marvel", rating)
             durasi = time.time() - start_time
+            time_logs.append(durasi)
+            rating_inputs.append(f"Marvel {rating}")
             print(f"Waktu: {durasi:.12f} detik")
             os.system('pause')
         elif pilihan == '2':
             os.system('cls')
-            rating_DC = input(f"Halo {nama}, masukan rating yang anda inginkan: ")
+            rating = input(f"Halo {nama}, masukan rating yang anda inginkan: ")
             start_time = time.time()
-            RatingSearching("DC", rating_DC)
+            RatingSearching("DC", rating)
             durasi = time.time() - start_time
+            time_logs_dc.append(durasi)
+            rating_inputs_dc.append(f"DC {rating}")
             print(f"Waktu: {durasi:.12f} detik")
             os.system('pause')
         elif pilihan == '3':
@@ -151,6 +156,14 @@ def main():
             break
         else:
             print("Pilihan tidak valid, silakan coba lagi.")
-
+    plt.figure(figsize=(10, 6))
+    plt.plot(rating_inputs, time_logs, marker='o')
+    plt.plot(rating_inputs_dc, time_logs_dc, marker='i')
+    plt.title('Waktu Eksekusi RatingSearching')
+    plt.xlabel('Input Pencarian')
+    plt.ylabel('Waktu (detik)')
+    plt.grid()
+    plt.tight_layout()  # Mengatur tata letak agar tidak terpotong
+    plt.show()
 if __name__ == "__main__":
     main()
